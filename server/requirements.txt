@@ -1,8 +1,7 @@
 Flask==3.0.0
 Flask-CORS==4.0.0
+Flask-SocketIO==5.3.6
+python-socketio==5.11.4
 docker
 PyGithub
 requests
-python-dotenv
-supabase
-github3.py
