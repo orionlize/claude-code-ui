@@ -1,0 +1,53 @@
+# React 项目文件清单
+
+## 新创建的配置文件
+- index.html - HTML入口
+- vite.config.ts - Vite配置
+- tsconfig.json - TypeScript配置
+- tsconfig.node.json - Node TypeScript配置
+- postcss.config.js - PostCSS配置
+- REACT_MIGRATION.md - 迁移说明文档
+
+## 新创建的源代码文件
+
+### 入口和路由
+- src/main.tsx - 应用入口点
+- src/App.tsx - React Router路由配置
+
+### 页面组件 (src/pages/)
+- HomePage.tsx - 主页/仪表板
+- SignInPage.tsx - 登录页面
+- ProjectsPage.tsx - 项目列表
+- ProjectDetailPage.tsx - 项目详情
+- ProjectTasksPage.tsx - 项目任务列表
+- TaskDetailPage.tsx - 任务详情
+- SettingsPage.tsx - 设置页面
+
+### 组件和工具 (从原项目复制并修改)
+- src/components/* - 所有UI组件
+- src/contexts/* - Auth Context
+- src/lib/* - API服务和工具
+- src/types/* - TypeScript类型
+- src/hooks/* - 自定义Hooks
+- src/styles/globals.css - 全局样式
+
+### 修改的文件
+- src/components/protected-route.tsx - 改用React Router
+- package.json - 移除Next.js，添加Vite和React Router
+
+## 构建输出
+- dist/ - 静态构建产物 (6.7MB)
+  - index.html
+  - assets/*.js
+  - assets/*.css
+  - *.svg
+
+## 移除的文件
+- app/ - Next.js App Router目录
+- next.config.ts - Next.js配置
+- middleware可能存在但未使用
+
+## 依赖统计
+- 生产依赖: 20个包
+- 开发依赖: 12个包
+- 总包数: 307个 (包括所有依赖)
